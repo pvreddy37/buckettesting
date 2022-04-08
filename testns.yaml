@@ -2,6 +2,7 @@ kind: Pod
 apiVersion: v1
 metadata:
   name: nginximage
+  namespace: default
 spec:
   containers:
     - name: nginx
