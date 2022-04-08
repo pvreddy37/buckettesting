@@ -1,0 +1,16 @@
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: test-ns  
+  namespace: default
+spec:
+  interval: 1m  
+  prune: true
+  path: "./"
+  sourceRef:
+    kind: GitRepository
+    name: gitcust 
+  postBuild:
+    substitute:
+      keyvaultname: secretmanagementsprint
+      tenantId: cfd26b50-fb8f-44cf-87b2-d5df3d15d884
