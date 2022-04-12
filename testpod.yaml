@@ -9,7 +9,7 @@ metadata:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: "${testlabel}"
+  name: helloworld-one
   namespace: helloworld-one
 spec:
   replicas: 1
@@ -41,7 +41,7 @@ spec:
   - port: 80
     name: http
   selector:
-    app: "${testlabel}"
+    app: helloworld-one
 ---
 apiVersion: traefik.containo.us/v1alpha1
 kind: Middleware
