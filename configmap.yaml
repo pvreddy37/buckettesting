@@ -6,3 +6,4 @@ metadata:
 data:
   keyvaultname: "testkeyvault"
   testlabel: "helloworld-one"
+  version: "v1"
