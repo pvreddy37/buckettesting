@@ -12,5 +12,5 @@ spec:
     name: gitcust 
   postBuild:
     substituteFrom:
-      - kind: ConfigMap
-        name: myvalues
+    - kind: ConfigMap
+      name: myvalues
