@@ -4,4 +4,5 @@ metadata:
   name: myvalues
   namespace: default
 data:
-  keyvaultname: "testkeyvault"  
+  keyvaultname: "testkeyvault"
+  testlabel: "helloworld-one"
